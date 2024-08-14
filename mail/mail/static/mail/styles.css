@@ -1,0 +1,132 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-sm {
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border: 1px solid #007bff;
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    background-color: transparent;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+/* Email views */
+#emails-view, #compose-view, #email-view {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.email-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-item:hover {
+    background-color: #f0f0f0;
+}
+
+.email-sender, .email-subject, .email-timestamp {
+    margin: 0;
+}
+
+.email-item.read {
+    background-color: #e9ecef;
+}
+
+.email-item.unread {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+/* Compose form */
+#compose-form input, #compose-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#compose-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .email-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
